@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vote Responsibly — an interactive voter awareness project about informed and ethical participation in democracy.">
+  <title>Vote Responsibly — Your Voice Matters</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Vote Responsibly home">
+      <span class="brand-mark">✓</span>
+      <span>VOTE<span class="brand-dot">.</span>WISE</span>
+    </a>
+    <nav>
+      <a href="#why">Why vote?</a>
+      <a href="#responsible">Vote wisely</a>
+      <a href="#case">Real world</a>
+      <a href="#poster">Poster</a>
+    </nav>
+    <button class="nav-cta" onclick="scrollToId('poster')">Make it count ↓</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> VOTER AWARENESS CAMPAIGN · INDIA</div>
+        <h1>Your vote.<br><em>Your voice.</em><br>Your responsibility.</h1>
+        <p class="hero-lede">Democracy isn't a spectator sport. Learn the issues, check the facts, and make your choice thoughtfully.</p>
+        <div class="hero-actions">
+          <button class="primary" onclick="scrollToId('why')">Explore the guide <span>→</span></button>
+          <button class="ghost" onclick="showToast('Plot twist: your vote is more useful than arguing in a comment section.')">A tiny reality check</button>
+        </div>
+        <div class="micro-proof">
+          <div class="proof-icon">◎</div>
+          <div><strong>INFORMED</strong><span> beats impulsive</span></div>
+          <div class="proof-icon">✦</div>
+          <div><strong>RESPONSIBLE</strong><span> beats pressured</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Illustration of a ballot box">
+        <div class="sun"></div>
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="floating-note note-a">CHECK<br>THE FACTS</div>
+        <div class="floating-note note-b">YOUR<br>CHOICE</div>
+        <div class="ballot-scene">
+          <div class="flag-ribbon"><span></span><span></span><span></span></div>
+          <div class="ballot-box">
+            <div class="box-slot"></div>
+            <div class="box-front">DEMOCRACY</div>
+            <div class="box-shadow"></div>
+          </div>
+          <div class="ballot-paper">
+            <div class="paper-line"></div>
+            <div class="paper-line short"></div>
+            <div class="tick">✓</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div>BE INFORMED</div><span>✦</span><div>BE RESPONSIBLE</div><span>✦</span><div>PARTICIPATE</div><span>✦</span><div>RESPECT THE CHOICE</div><span>✦</span>
+    </section>
+
+    <section class="section" id="why">
+      <div class="section-heading">
+        <div class="eyebrow">01 · THE BIG IDEA</div>
+        <h2>Why does voting<br><em>actually</em> matter?</h2>
+        <p>Because democracy works through participation. One election doesn't solve everything, but citizens choosing to participate keeps representative government representative.</p>
+      </div>
+
+      <div class="reason-grid">
+        <article class="reason-card featured">
+          <div class="card-number">01</div>
+          <div class="icon">◉</div>
+          <h3>Shape decisions</h3>
+          <p>Elections let eligible citizens choose representatives who make decisions on public issues.</p>
+          <div class="card-tag">YOUR CHOICE</div>
+        </article>
+        <article class="reason-card">
+          <div class="card-number">02</div>
+          <div class="icon">↗</div>
+          <h3>Strengthen democracy</h3>
+          <p>Participation helps make government more representative of the people it serves.</p>
+          <div class="card-tag">PARTICIPATION</div>
+        </article>
+        <article class="reason-card">
+          <div class="card-number">03</div>
+          <div class="icon">⌁</div>
+          <h3>Hold leaders accountable</h3>
+          <p>Voting gives citizens a peaceful democratic way to express approval or disagreement with leadership.</p>
+          <div class="card-tag">ACCOUNTABILITY</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="responsible" id="responsible">
+      <div class="section-heading light">
+        <div class="eyebrow">02 · THE RESPONSIBLE VOTER</div>
+        <h2>Four moves.<br><em>No political gymnastics.</em></h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span><h3>VERIFY</h3><p>Check information with reliable sources before believing or sharing it.</p></div>
+        <div class="step"><span>02</span><h3>UNDERSTAND</h3><p>Learn about candidates, issues and the election process.</p></div>
+        <div class="step"><span>03</span><h3>DECIDE</h3><p>Make your own informed choice. Don't let pressure make it for you.</p></div>
+        <div class="step"><span>04</span><h3>VOTE</h3><p>Participate respectfully and follow the rules of the election.</p></div>
+      </div>
+      <div class="humour-strip">🚨 IMPORTANT PUBLIC SERVICE ANNOUNCEMENT: <strong>“I saw it in a group chat”</strong> is not a source.</div>
+    </section>
+
+    <section class="ethics section">
+      <div class="ethics-card">
+        <div class="ethics-copy">
+          <div class="eyebrow">03 · ETHICAL VOTING</div>
+          <h2>Think before<br>you tick.</h2>
+          <p>A responsible voter makes a choice freely and based on information, not bribery, intimidation, rumours or pressure.</p>
+          <div class="pill-row">
+            <span>✓ Check facts</span><span>✓ Think independently</span><span>✓ Respect others</span>
+          </div>
+        </div>
+        <div class="do-not">
+          <div class="do-title">THE “NOPE” LIST</div>
+          <div class="nope">✕ Don't spread unverified claims</div>
+          <div class="nope">✕ Don't accept inducements for votes</div>
+          <div class="nope">✕ Don't pressure someone else's choice</div>
+          <div class="nope">✕ Don't treat politics like a team sport</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="case">
+      <div class="case-top">
+        <div>
+          <div class="eyebrow">04 · DEMOCRACY IN THE REAL WORLD</div>
+          <h2>The Gyanesh Kumar<br><em>controversy</em></h2>
+        </div>
+        <div class="case-badge">CURRENT CASE STUDY<br><small>Updated Oct. 2026</small></div>
+      </div>
+
+      <div class="case-intro">
+        <p><strong>Why include a political controversy in a voter-awareness project?</strong> Because democratic participation also means understanding how election processes are debated, checking claims carefully, and distinguishing allegations from established facts.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item"><span>01</span><div><b>SIR & electoral rolls</b><p>The Election Commission's Special Intensive Revision (SIR) has become a major point of public and political debate over voter-list revisions.</p></div></div>
+        <div class="timeline-item"><span>02</span><div><b>Questions & objections</b><p>Reporting in September 2026 described objections raised by Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi concerning aspects of the SIR process. The ECI said its decisions were ultimately unanimous.</p></div></div>
+        <div class="timeline-item"><span>03</span><div><b>Political protests</b><p>Opposition parties have demanded Chief Election Commissioner Gyanesh Kumar's resignation and protested over alleged irregularities. The ECI and BJP have rejected allegations of wrongdoing.</p></div></div>
+        <div class="timeline-item"><span>04</span><div><b>Why voters should care</b><p>Whatever one's political view, election-related claims should be checked against reliable evidence. Electoral-roll accuracy and public trust are important to a functioning democracy.</p></div></div>
+      </div>
+
+      <div class="two-col">
+        <div class="fact-box">
+          <span class="box-label">WHAT IS VERIFIED?</span>
+          <h3>A public dispute is happening.</h3>
+          <p>The controversy and protests are documented. Specific allegations about wrongdoing remain contested, so this site does not present them as proven facts.</p>
+        </div>
+        <div class="fact-box accent">
+          <span class="box-label">THE LESSON</span>
+          <h3>Check. Question. Verify.</h3>
+          <p>Responsible citizenship means examining evidence and hearing competing claims rather than forwarding the loudest version.</p>
+        </div>
+      </div>
+
+      <div class="sources">
+        <span>REPORTING USED FOR THIS CASE STUDY</span>
+        <a href="https://indianexpress.com/article/express-exclusive/election-commission-sir-14-objections-gyanesh-kumar-sukhbir-singh-sandhu-vivek-joshi-10889737/" target="_blank" rel="noopener">Indian Express · SIR objections ↗</a>
+        <a href="https://www.reuters.com/business/media-telecom/hundreds-police-guard-indian-capital-ahead-opposition-protest-2026-10-06/" target="_blank" rel="noopener">Reuters · Oct. 6 protest ↗</a>
+        <a href="https://indianexpress.com/article/explained/explained-politics/gyanesh-kumar-resignation-eci-protests-10906328/" target="_blank" rel="noopener">Indian Express · controversy explained ↗</a>
+      </div>
+    </section>
+
+    <section class="myths section">
+      <div class="section-heading">
+        <div class="eyebrow">05 · QUICK FACT CHECK</div>
+        <h2>Let's retire a few<br><em>bad arguments.</em></h2>
+      </div>
+      <div class="myth-grid">
+        <button class="myth" onclick="flipCard(this)"><span class="label">MYTH</span><strong>“One vote won't matter.”</strong><small>Tap to flip</small><div class="back">Every election is made up of individual choices. Participation is the point.</div></button>
+        <button class="myth" onclick="flipCard(this)"><span class="label">MYTH</span><strong>“I'll just believe the viral post.”</strong><small>Tap to flip</small><div class="back">Virality measures sharing, not truth. Check reliable sources.</div></button>
+        <button class="myth" onclick="flipCard(this)"><span class="label">MYTH</span><strong>“Someone else can choose for me.”</strong><small>Tap to flip</small><div class="back">A responsible vote should reflect your own informed choice.</div></button>
+      </div>
+    </section>
+
+    <section class="poster-section" id="poster">
+      <div class="poster-wrap">
+        <div class="poster">
+          <div class="poster-topline">A CITIZEN'S GUIDE TO DEMOCRACY · 01</div>
+          <div class="poster-symbol">✓</div>
+          <h2>DON'T JUST HAVE<br>A VOICE.</h2>
+          <h3>USE IT WISELY.</h3>
+          <div class="poster-rule"></div>
+          <div class="poster-reasons">
+            <div><b>01</b><strong>SHAPE DECISIONS</strong><span>Choose representatives.</span></div>
+            <div><b>02</b><strong>STRENGTHEN DEMOCRACY</strong><span>Participate in your democracy.</span></div>
+            <div><b>03</b><strong>HOLD LEADERS ACCOUNTABLE</strong><span>Make your choice count.</span></div>
+          </div>
+          <div class="poster-message">BE INFORMED · BE ETHICAL · RESPECT THE CHOICE · PARTICIPATE</div>
+          <div class="poster-bottom">YOUR VOTE IS YOURS.</div>
+        </div>
+      </div>
+      <div class="poster-side">
+        <div class="eyebrow">06 · THE ACTUAL POSTER</div>
+        <h2>One screen.<br>One message.<br><em>Zero beige clipart.</em></h2>
+        <p>This A4-style poster pulls together the core requirements of the performance task: a slogan, three reasons, democratic symbolism and a clear ethical-voting message.</p>
+        <button class="primary" onclick="window.print()">Print / save as PDF <span>↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">VOTE<span>.</span>WISE</div>
+    <p>Informed citizens make stronger democracies.</p>
+    <div class="footer-note">School voter-awareness project · 2026</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
