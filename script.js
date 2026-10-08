@@ -17,7 +17,7 @@ document.head.appendChild(style);
 
 function downloadPoster() {
     const link = document.createElement("a");
-    link.href = "poster.png";
+    link.href = "VOTE.WISE.png";
     link.download = "voter-poster.png";
     link.click();
 }
