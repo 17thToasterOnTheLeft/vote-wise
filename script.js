@@ -1,4 +1,6 @@
-function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth"});}
+function scrollToId(id){
+  document.getElementById(id)?.scrollIntoView({behavior:"smooth"});
+}
 function showToast(message){
   const toast=document.getElementById("toast");
   toast.textContent=message; toast.classList.add("show");
@@ -12,3 +14,10 @@ document.querySelectorAll(".reason-card,.step,.timeline-item,.fact-box,.myth,.po
 const style=document.createElement("style");
 style.textContent="@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}";
 document.head.appendChild(style);
+
+function downloadPoster() {
+    const link = document.createElement("a");
+    link.href = "poster.png";
+    link.download = "voter-poster.png";
+    link.click();
+}
